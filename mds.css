@@ -1,0 +1,21 @@
+.mds-text-field {
+  border: solid 1px #ccc;
+  padding: 0 8px;
+  position: relative;
+}
+.mds-text-field__input {
+  border: none;
+  font-size: 16px;
+  outline: 0;
+  padding: 16px 0 10px;
+}
+.mds-text-field__label{
+ font-size: 16px;
+ position: absolute;
+ transform: translate(0, 16px) scale(1);
+ transition: all .1s ease-in-out;
+}
+
+.mds-text-field__label--floated{
+ transform: translate(0, 4px) scale(.75);
+}
