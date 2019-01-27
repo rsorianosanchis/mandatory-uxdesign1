@@ -19,3 +19,14 @@
 .mds-text-field__label--floated{
  transform: translate(0, 4px) scale(.75);
 }
+
+.a {
+ color: red;
+}
+.test{
+ color: green;
+}
+.test:hover{
+ color: red;
+}
+
