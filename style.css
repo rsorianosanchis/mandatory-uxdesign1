@@ -6,11 +6,9 @@ body {
  background-repeat: no-repeat;
  background-size: cover;
 }
-form{
- box-sizing: border-box;
- margin: 0 auto;
- width: 280px;
-}
+
+/*****************************************************/
+/*****************************************************/
 
 .container{
  position: absolute;
@@ -33,6 +31,15 @@ form{
  color: #f7497d;
  /*text-transform: uppercase;*/
 }
+
+form{
+ box-sizing: border-box;
+ margin: 0 auto;
+ width: 280px;
+}
+
+/*****************************************************/
+/*****************************************************/
 
 .mds-text-field__input{
  
@@ -92,3 +99,52 @@ form{
 .mds-text-field__input:valid{
  border-bottom: 2px solid #f7497d;
 }
+
+/*****************************************************/
+/*****************************************************/
+.mds-switch{
+ padding-top: 20px;
+}
+
+.mds-switch__input{
+ position: relative;
+ width: 36px;
+ height: 16px;
+ -webkit-appearance: none;
+ background: #c6c6c6;
+ outline: none;
+ border-radius: 8px;
+ transition: .5s;
+}
+.mds-switch__input:checked{
+ background: #f7497d87;
+}
+.mds-switch__input:before{
+ content: '';
+ position: absolute;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ top: 0px;
+ left: 0px;
+ background: #909090;
+ transform: scale(1.2);
+ transition: .5s;
+}
+.mds-switch__input:checked:before{
+ left: 20px;
+ background: #f7497d;
+
+}
+
+
+/*****************************************************/
+/*****************************************************/
+
+
+
+
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
