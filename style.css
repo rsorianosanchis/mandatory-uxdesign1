@@ -2,7 +2,7 @@ body {
  margin: 0;
  padding: 0;
  font-family: sans-serif;
- background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Helsingborg%2C_Kaffeg%C3%B6ken%2C_1961.jpg');
+ background: url('https://c1.staticflickr.com/5/4432/36490758486_87af08e493_b.jpg');
  background-repeat: no-repeat;
  background-size: cover;
 }
@@ -60,10 +60,16 @@ body {
 }
 
 /*här modifiera label läget när label has en syskon-input med focus*/
-.mds-text-field__input:focus ~ .mds-text-field__label{
+/*med :valid (det går när finns någon value under regel) behåller man label flyttat*/
+.mds-text-field__input:focus ~ .mds-text-field__label,
+.mds-text-field__input:valid ~ .mds-text-field__label{
  top: -12px;
  left: 0;
  color: #f7497d;
  font-size: 12px;
-
+ font-weight: bold;
+}
+.mds-text-field__input:focus,
+.mds-text-field__input:valid{
+ border-bottom: 2px solid #f7497d;
 }
