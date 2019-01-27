@@ -1,10 +1,15 @@
 body {
  margin: 0;
  padding: 0;
- font-family: sans-serif;
+ font-family: 'Roboto',sans-serif;
  background: url('https://c1.staticflickr.com/5/4432/36490758486_87af08e493_b.jpg');
  background-repeat: no-repeat;
  background-size: cover;
+}
+form{
+ box-sizing: border-box;
+ margin: 0 auto;
+ width: 280px;
 }
 
 .container{
@@ -14,45 +19,59 @@ body {
  transform: translate(-50%,-50%);
  width: 400px;
  background: #fff;
- padding: 40px;
+ padding: 30px;
  box-sizing: border-box;
  border: 1px solid rgba(0, 0, 0, .1);
  box-shadow: 0 5px 10px rgba(0, 0, 0,.2);
 }
 
 .container h2 {
- margin: 0 0 40px 0;
- padding: 0;
+ width: 280px;
+ box-sizing: border-box;
+ margin: 0 auto;
+ padding-bottom: 30px;
  color: #f7497d;
  /*text-transform: uppercase;*/
 }
 
 .mds-text-field__input{
- padding: 10px 0px;
- margin-bottom: 30px;
- /*background: grey;*/
+ 
+ margin-bottom: 0px;
+ background: #DCDCDC;
+ 
 }
 
 /* input och annadra elementer */
 .mds-text-field__input{
  width: 100%;
+ height: 100%;
+ padding-left: 12px;
+ padding-top: 26px;
+ font-size: 16px;
  box-sizing: border-box;
  box-shadow: none;
  outline: none;
  border: none;
+ border-radius: 4px 4px 0px 0px;
  border-bottom: 1px solid #999;
 }
 /* cursor:pointer*/
 .mds-text-field{
  position: relative;
+ width: 280px;
+ height: 56px;
+ padding-bottom: 10px;
+ 
+
 
 }
 
 .mds-text-field__label{
  position: absolute;
- font-family: 'roboto';
- top: 10px;
- left: 0px;
+ font-family: 'Roboto', cursive;
+ font-size: 16px;
+ top: 20px;
+ left: 12px;
  color: #999;
  transition: .5s;
  /*undvik att man kan select label*/
@@ -63,8 +82,8 @@ body {
 /*med :valid (det går när finns någon value under regel) behåller man label flyttat*/
 .mds-text-field__input:focus ~ .mds-text-field__label,
 .mds-text-field__input:valid ~ .mds-text-field__label{
- top: -12px;
- left: 0;
+ top: 8px;
+ left: 12px;
  color: #f7497d;
  font-size: 12px;
  font-weight: bold;
