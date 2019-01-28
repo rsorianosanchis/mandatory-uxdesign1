@@ -136,15 +136,56 @@ form{
  background: #f7497d;
 
 }
-
+.mds-switch__label{
+ position: relative;
+ top: -5px;
+ left: 10px;
+ color: black;
+}
 
 /*****************************************************/
 /*****************************************************/
+.mds-checkbox{
+ padding-top: 20px;
+
+}
+
+.mds-checkbox__input{
+ width: 24px;
+ height: 24px;
+ -webkit-appearance: none;
+ content: '';
+ border: 1px solid black;
+ color: black;
+ transition: 0.5s;
+}
 
 
+.mds-checkbox__input:checked{
+ 
 
+ 
+}
+.mds-checkbox__input:before{
+ 
+  
+}
 
+.mds-checkbox__input:checked:before{
+ content: '\2714';
+ background: #f7497d87;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+.mds-checkbox__label{
+ position: relative;
+ top: -10px;
+ left: 8px;
+}
 /*****************************************************/
-/*****************************************************/
+/************content: '\2714';
+ color: black;*****************************************/
 /*****************************************************/
 /*****************************************************/
