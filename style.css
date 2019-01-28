@@ -24,6 +24,7 @@ body {
 }
 
 .container h2 {
+ font-size: 2em;
  width: 280px;
  box-sizing: border-box;
  margin: 0 auto;
@@ -151,36 +152,36 @@ form{
 }
 
 .mds-checkbox__input{
+ position: relative;
  width: 24px;
  height: 24px;
  -webkit-appearance: none;
- content: '';
- border: 1px solid black;
+ outline: 0;
+ border: 1px solid #909090;
  color: black;
  transition: 0.5s;
 }
 
-
-.mds-checkbox__input:checked{
- 
-
- 
-}
 .mds-checkbox__input:before{
- 
-  
+ position: absolute;
+ content:'';
+ left: 5px;
+ top: 1px;
+ transition: .5s;
+
 }
 
 .mds-checkbox__input:checked:before{
  content: '\2714';
- background: #f7497d87;
- width: 100%;
- margin: 0;
+ transform: scale(1.5);
+ color: red;
+ margin: 0 ;
  padding: 0;
 }
 
 .mds-checkbox__label{
  position: relative;
+ pointer-events: none;
  top: -10px;
  left: 8px;
 }
