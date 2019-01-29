@@ -1,13 +1,9 @@
 'use strict';
-
-// Object med metoderna
-
-
+//
+// Object med metodern
 let mds = {
  texField: function(){
-  console.log("hola");
-  
-  labelFloating();
+  /* body... */
  },
  switch: function () {
   /* body... */
@@ -16,24 +12,51 @@ let mds = {
   /* body... */
  },
  radio: function () {
-  /* body... */
+  // get radio buttons for enable/disabled elements
+  let vRadioInput = document.querySelectorAll('.mds-radio__input');
+  console.log(vRadioInput);
+  let arrRadioInput = [];
+  for(let i = 0; i < vRadioInput.length; i++){
+   vRadioInput[i].addEventListener('change',(e)=>{kontroll(e)})
+   arrRadioInput.push(vRadioInput[i])
+   console.log(arrRadioInput);
+  }
  },
 };
 
-/* Delad functioner for att bli anropat från metoderna */
+/* functioner for att vara anropat från metoderna */
 
-function labelFloating () {
- const vTextField = document.querySelectorAll('.mds-text-field');
- const vTextFieldInput = document.querySelectorAll('.mds-text-field__input');
+
+function kontroll(e) {
  //
- for(let i = 0; i < vTextField.length; i++){
-  vTextFieldInput[i].addEventListener('focus',()=>{vTextField[i].classList.add('mds-text-field--active')});
-  vTextFieldInput[i].addEventListener('blur',()=>{vTextField[i].classList.remove('mds-text-field--active')});
-  
+ let allaInputElementer = document.querySelectorAll('input');
+ console.log(allaInputElementer);
+ //
+ let kontrollDisable = e.target.nextElementSibling.innerHTML;
+ console.log(kontrollDisable);
+ //
+ if (kontrollDisable === 'Ja'){
+   allaInputElementer.forEach( function(element, index) {
+    if (element.type !== 'radio'){
+     element.setAttribute('disabled', 'true');
+    }else{
+     console.log("det är inte elemengt för att stopa");
+    }
+    // statements
+   });
+ }else if (kontrollDisable === 'Nej'){
+   allaInputElementer.forEach( function(element, index) {
+    if (element.disabled === true){
+     element.removeAttribute('disabled');
+    }else{
+     console.log("det är inte element för att stopa");
+    }
+   });
+ }else{
+  console.error("ring utvecklare och fråga :(");
  }
-
- console.log("soy un cabeza de chorlito");
- // body... 
 };
 
-mds.texField();
+// JavaScript program for kontrollera enable/disable
+
+mds.radio();
