@@ -23,10 +23,9 @@ let mds = {
   }
  },
 };
-
+//
 /* functioner for att vara anropat från metoderna */
-
-
+//
 function kontroll(e) {
  //
  let allaInputElementer = document.querySelectorAll('input');
@@ -56,7 +55,5 @@ function kontroll(e) {
   console.error("ring utvecklare och fråga :(");
  }
 };
-
 // JavaScript program for kontrollera enable/disable
-
 mds.radio();

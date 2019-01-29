@@ -6,10 +6,8 @@ body {
  background-repeat: no-repeat;
  background-size: cover;
 }
-
 /*****************************************************/
 /*****************************************************/
-
 .container{
  position: absolute;
  top: 50%;
@@ -23,7 +21,6 @@ body {
  border-radius: 10px;
  box-shadow: 10px 10px 25px rgba(0, 0, 0,.3);
 }
-
 .container h2 {
  font-size: 2em;
  width: 280px;
@@ -33,18 +30,13 @@ body {
  color: #f7497d;
  /*text-transform: uppercase;*/
 }
-
 form{
  box-sizing: border-box;
  margin: 0 auto;
  width: 280px;
 }
-
 /*****************************************************/
 /*****************************************************/
-
-
-/* input och annadra elementer */
 .mds-text-field__input{
  margin-bottom: 0px;
  background: #DCDCDC;
@@ -61,17 +53,12 @@ form{
  border-bottom: 1px solid #999;
  cursor: pointer;
 }
-/* cursor:pointer*/
 .mds-text-field{
  position: relative;
  width: 280px;
  height: 56px;
  padding-bottom: 10px;
- 
-
-
 }
-
 .mds-text-field__label{
  position: absolute;
  font-family: 'Roboto', cursive;
@@ -83,7 +70,6 @@ form{
  /*undvik att man kan select label*/
  pointer-events: none;
 }
-
 /*här modifiera label läget när label has en syskon-input med focus*/
 /*med :valid (det går när finns någon value under regel) behåller man label flyttat*/
 .mds-text-field__input:focus ~ .mds-text-field__label,
@@ -98,13 +84,11 @@ form{
 .mds-text-field__input:valid{
  border-bottom: 2px solid #f7497d;
 }
-
 /*****************************************************/
 /*****************************************************/
 .mds-switch{
  padding-top: 20px;
 }
-
 .mds-switch__input{
  position: relative;
  width: 36px;
@@ -134,7 +118,6 @@ form{
 .mds-switch__input:checked:before{
  left: 20px;
  background: #f7497d;
-
 }
 .mds-switch__label{
  position: relative;
@@ -142,14 +125,11 @@ form{
  left: 10px;
  color: black;
 }
-
 /*****************************************************/
 /*****************************************************/
 .mds-checkbox{
  padding-top: 20px;
-
 }
-
 .mds-checkbox__input{
  position: relative;
  width: 24px;
@@ -161,13 +141,10 @@ form{
  transition: 0.5s;
  cursor: pointer;
 }
-
 .mds-checkbox__input:checked{
 background: #f7497d;
 border: 1px solid #f7497d;
-
 }
-
 .mds-checkbox__input:before{
  position: absolute;
  content:'';
@@ -175,37 +152,29 @@ border: 1px solid #f7497d;
  top: 1px;
  transition: .5s;
 }
-
 .mds-checkbox__input:checked:before{
  content: '\2714';
  transform: scale(1.5);
-
  color: white;
  margin: 0 ;
  padding: 0;
 }
-
 .mds-checkbox__label{
  position: relative;
  pointer-events: none;
  top: -10px;
  left: 8px;
-
 }
-
 /*****************************************************/
 /*****************************************************/
 .mds-radio{
  padding: 5px 0px;
 }
-
 .mds-radio__p{
  padding-top: 0px;
  padding-bottom: 10px;
  margin-bottom: 0;
-
 }
-
 .mds-radio__input{
  position: relative;
  cursor: pointer;
@@ -221,14 +190,9 @@ border: 1px solid #f7497d;
  border-radius: 10px;
  transition: 0s;
 }
-
 .mds-radio__input:checked{
-
  border: 2px solid #f7497d;
- 
 }
-
-
 .mds-radio__input:before{
  position: absolute;
  margin: 0;
@@ -237,24 +201,13 @@ border: 1px solid #f7497d;
  width: 10px;
  height: 10px;
  border-radius: 5px;
- 
  transition: 0s;
 }
-
-.mds-radio__input:checked:before{
- 
+.mds-radio__input:checked:before{ 
  background: #f7497d;
-
  left: 2.8px;
  top: 2.8px;
- 
 }
-.mds-radio__span{
- 
- 
+.mds-radio__span{ 
 }
-
-
-
-
 /*****************************************************/
