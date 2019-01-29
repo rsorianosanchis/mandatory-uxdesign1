@@ -159,7 +159,14 @@ form{
  outline: 0;
  border: 1px solid #909090;
  color: black;
+
  transition: 0.5s;
+}
+
+.mds-checkbox__input:checked{
+background: #f7497d;
+border: 1px solid #f7497d;
+
 }
 
 .mds-checkbox__input:before{
@@ -167,14 +174,18 @@ form{
  content:'';
  left: 5px;
  top: 1px;
+
+
  transition: .5s;
+
 
 }
 
 .mds-checkbox__input:checked:before{
  content: '\2714';
  transform: scale(1.5);
- color: red;
+
+ color: white;
  margin: 0 ;
  padding: 0;
 }
@@ -184,9 +195,12 @@ form{
  pointer-events: none;
  top: -10px;
  left: 8px;
+
 }
 /*****************************************************/
-/************content: '\2714';
- color: black;*****************************************/
 /*****************************************************/
+
+
+
+
 /*****************************************************/
